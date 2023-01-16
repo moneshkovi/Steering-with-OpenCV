@@ -16,7 +16,7 @@ def get_center(mask):
                 max_area = cv2.contourArea(cnt)
                 M = cv2.moments(cnt)
                 center = (int(M["m10"]/M["m00"]),int(M["m01"]/M["m00"]))
-        return center
+        return center   
                     
     except Exception as e:
         return None
