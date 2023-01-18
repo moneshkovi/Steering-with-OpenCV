@@ -12,7 +12,7 @@ cv2.createTrackbar("Smin","img",0,255,nothing)
 cv2.createTrackbar("Smax","img",0,255,nothing)
 cv2.createTrackbar("Vmin","img",0,255,nothing)
 cv2.createTrackbar("Vmax","img",0,255,nothing)
-
+  
 while cap.isOpened():
 
     _,img=cap.read()
