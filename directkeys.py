@@ -28,7 +28,7 @@ class KeyBdInput(ctypes.Structure):
 class HardwareInput(ctypes.Structure):
     _fields_ = [("uMsg", ctypes.c_ulong),
                 ("wParamL", ctypes.c_short),
-                ("wParamH", ctypes.c_ushort)]
+                ("wParamH", ctypes.c_ushort)]                                 
 
 class MouseInput(ctypes.Structure):
     _fields_ = [("dx", ctypes.c_long),
