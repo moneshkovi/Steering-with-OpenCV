@@ -117,7 +117,7 @@ def setJoy(valueX, valueY, scale):
 
 def test():
     vj.open()
-    print("vj opening", flush=True)
+    print("vj opening", flush=True)             
     btn = 1
     time.sleep(2)
     print("sending axes", flush=True)
