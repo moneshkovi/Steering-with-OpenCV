@@ -28,7 +28,7 @@ while cap.isOpened():
     mask = cv2.inRange(imgHSV,(Hmin,Smin,Vmin),(Hmax,Smax,Vmax))
     final=cv2.bitwise_and(img,img,mask=mask)
 
-    cv2.imshow("Final",final)
+    cv2.imshow("Final",final)                                         
 
     k = cv2.waitKey(10)
     if k==27:
