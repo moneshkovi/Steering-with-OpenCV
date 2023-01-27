@@ -16,7 +16,7 @@ CONST_DLL_VJOY = r"C:\Users\Admin\Desktop\Steering\vJoyInterface.dll"
 
 class vJoy(object):
     def __init__(self, reference = 1):
-        self.handle = None
+        self.handle = None   
         self.dll = ctypes.CDLL( CONST_DLL_VJOY )
         self.reference = reference
         self.acquired = False
@@ -29,7 +29,7 @@ class vJoy(object):
     
     def close(self):
         if self.dll.RelinquishVJD( self.reference ):
-            self.acquired = False
+            self.acquired = False   
             return True
         return False
     
