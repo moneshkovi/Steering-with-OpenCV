@@ -29,7 +29,7 @@ class vJoy(object):
     
     def close(self):
         if self.dll.RelinquishVJD( self.reference ):
-            self.acquired = False   
+            self.acquired = False                               
             return True
         return False
     
