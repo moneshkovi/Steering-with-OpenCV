@@ -37,7 +37,7 @@ def calc_angle(point,center):
     vec1 = ba/np.linalg.norm(ba)
     vec2 = bc/np.linalg.norm(bc)
     dot = np.dot(vec1,vec2)
-    angle = np.arccos(dot)
+    angle = np.arccos(dot)   
 
     if ba[0]<0:
         angle = -angle
